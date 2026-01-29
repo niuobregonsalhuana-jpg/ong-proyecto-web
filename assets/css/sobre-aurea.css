@@ -10,6 +10,31 @@ body {
   font-size: 16px;
 }
 
+/* Barra superior ONG */
+.top-bar {
+  width: 100%;
+  background-color: #ff6276; 
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 0;
+  letter-spacing: 1px;
+}
+
+.top-bo {
+  width: 100%;
+  background-color: #d2f891;
+  color: #f7f2f3; 
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 0;
+  letter-spacing: 1px;
+}
+
 h1,
 h2,
 h3,
@@ -20,26 +45,78 @@ h6 {
 }
 
 :root {
-  --color-pink: #ff0080;
+  --color-pink: #ff6276;
   --color-secondary: #fde8f3;
+   --color-navbar: #f8eac4;
+   --color-section: #e3ffb4;
+}
+
+.nav-link-dark {
+  color: #ff6276!important;
 }
 
 .bg-pink {
   background-color: var(--color-pink) !important;
 }
+
+.bg-navbar {
+  background-color: var(--color-navbar) !important;
+}
+
 .text-pink {
   color: var(--color-pink) !important;
 }
+
+.text-white {
+  color:#ffffff
+}
+
+.navbar-brand {
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+.btn-custom {
+  background-color: var(--color-pink);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 28px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #b3ebfc;
+  color: #fff;
+}
+
+.separador-rosado {
+  background-color: var(--color-navbar);
+  color: #ff6276;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.separador-rosado .mensaje {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 
 .mision-sobre-aurea {
   background-color: var(--color-secondary);
   padding: 60px 20px;
   border-radius: 8px;
-  margin-top: 40px;
+  
 }
 
 .separador-rosado {
-  background-color: var(--color-pink);
+  background-color: var(--color-navbar);
   color: #fff;
   text-align: center;
   padding: 48px 0;
@@ -152,6 +229,213 @@ h6 {
 }
 
 .btn-custom:hover {
-  background-color: #e60073;
+  background-color: #d7fa99;
   color: #fff;
+}
+
+.hero-sobre-nosotros {
+  background-color:  #f8eac4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mision-sobre-aurea {
+  background-color: #ff6276;
+}
+
+.mascota {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  width: 150px;
+}
+
+.mascota img {
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.mascota:hover img {
+  transform: scale(1.1);
+}
+
+.cuadro-ayuda {
+  display: none;
+}
+
+
+.cuadro-ayuda {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  width: 280px;
+  background: #ffffff;
+  border: 5px solid #ff6276;
+  border-radius: 6px; /* más cuadrado */
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 998;
+}
+
+/* Header */
+.ayuda-header h3 {
+  margin: 0;
+  color: #ff6276;
+  font-size: 18px;
+}
+
+.ayuda-header p {
+  margin: 6px 0 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Textarea */
+.cuadro-ayuda textarea {
+  width: 100%;
+  height: 80px;
+  padding: 8px;
+  border: 1.5px solid #ff6276;
+  border-radius: 4px;
+  font-size: 13px;
+  resize: none;
+  outline: none;
+}
+
+.cuadro-ayuda textarea:focus {
+  border-color: #ff6276;
+}
+
+/* Botón */
+.cuadro-ayuda button {
+  margin-top: 12px;
+  width: 100%;
+  background: #ff6276;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cuadro-ayuda button:hover {
+  background: #ff6276;
+}
+
+.cuadro-ayuda {
+  animation: fadeUp 0.3s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+footer {
+  background-color: #535353;
+  color: #fff;
+  padding: 48px 0;
+  font-size: 14.4px;
+}
+
+footer h4,
+footer h5 {
+  font-weight: 600;
+}
+
+footer p {
+  color: #dcdcdc;
+  margin-bottom: 16px;
+}
+
+footer a {
+  color: #dcdcdc;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-pink);
+}
+
+footer .border-top {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+footer .fs-4 {
+  font-size: 24px !important;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.footer-logo {
+  width: 130px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.newsletter-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 6px 4px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.newsletter-btn {
+  background: #fff7dd; /* similar al botón de la imagen */
+  color: #ff6276;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 999px; /* completamente circular */
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.newsletter-btn:hover {
+  opacity: 0.9;
+}
+
+.mensaje {
+  color: #ff6276; /* color con código */
+}
+
+@media (max-width: 576px) {
+  .separador-rosado .mensaje {
+    font-size: 1.2rem;
+  }
 }
